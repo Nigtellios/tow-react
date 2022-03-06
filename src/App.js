@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import Banner from './Components/Banner/Banner';
 import PropTypes from "prop-types";
+import Banner from './Components/Banner/Banner';
+import Footer from "./Components/Footer/Footer";
 
 Banner.propTypes = {text: PropTypes.string};
 
@@ -22,6 +23,9 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Footer text="2021, Jakub Kowalski"/>
+
     </div>
   );
 }
