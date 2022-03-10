@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from "prop-types";
 import styled from 'styled-components';
 
 function Banner(props) {
@@ -22,6 +24,10 @@ const BannerWrapper = styled.div`
 const BannerText = styled.h1`
   font-size: 48px;
   line-height: 48px;
-`
+`;
+
+Banner.propTypes = {
+  text: PropTypes.string
+}
 
 export default Banner;

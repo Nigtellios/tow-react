@@ -1,13 +1,15 @@
 import logo from './logo.svg';
-import PropTypes from "prop-types";
+import Header from "./Components/Header/Header";
 import Banner from './Components/Banner/Banner';
 import Footer from "./Components/Footer/Footer";
-
-Banner.propTypes = {text: PropTypes.string};
 
 function App() {
   return (
     <div className="App">
+      <Header
+        logotype="http://localhost:8888/uploads/TOW_Logotype_79f99a22d8.svg"
+        logotypeAlt="Tickets of Wonderland"
+      />
       <Banner text="React Banner" />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
