@@ -1,28 +1,21 @@
-import logo from './logo.svg';
+import Header from "./Components/Header/Header";
 import Banner from './Components/Banner/Banner';
-import PropTypes from "prop-types";
-
-Banner.propTypes = {text: PropTypes.string};
+import Footer from "./Components/Footer/Footer";
+import GlobalStyles from "./Global/styles/GlobalStyles";
+import ResetCss from "./Global/styles/ResetCss";
 
 function App() {
   return (
-    <div className="App">
+    <main>
+      <ResetCss/>
+      <GlobalStyles/>
+      <Header
+        logotype="http://localhost:8888/uploads/TOW_Logotype_79f99a22d8.svg"
+        logotypeAlt={1}
+      />
       <Banner text="React Banner" />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Footer text="2021, Jakub Kowalski"/>
+    </main>
   );
 }
 
