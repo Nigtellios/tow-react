@@ -1,29 +1,31 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import styled from 'styled-components';
+import rem from "../../Global/utils/PxToRem";
 
-function Banner(props) {
+function Banner({ text }) {
   return (
-    <BannerWrapper>
-      <BannerText>
-        {props.text}
-      </BannerText>
-    </BannerWrapper>
+    <section>
+      <BannerWrapper>
+        <BannerText>
+          {text}
+        </BannerText>
+      </BannerWrapper>
+    </section>
   );
 }
 
 const BannerWrapper = styled.div`
   display: flex;
-  width: 100%;
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: 20px;
+  margin: ${ rem(20) };
 `;
 
 const BannerText = styled.h1`
-  font-size: 48px;
-  line-height: 48px;
+  font-size: ${ rem(48) };
+  line-height: ${ rem(48) };
 `;
 
 Banner.propTypes = {
