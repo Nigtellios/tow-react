@@ -8,7 +8,7 @@ function Banner({ text }) {
     <section>
       <BannerWrapper>
         <BannerText>
-          {text}
+          { text }
         </BannerText>
       </BannerWrapper>
     </section>

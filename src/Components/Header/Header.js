@@ -16,6 +16,11 @@ function Header( {logotype, logotypeAlt} ) {
   );
 }
 
+Header.propTypes = {
+    logotype: PropTypes.string,
+    logotypeAlt: PropTypes.string
+}
+
 const HeaderWrapper = styled.header`
   display: flex;
   flex-flow: row nowrap;
@@ -52,10 +57,5 @@ const Logotype = styled.div`
     max-width: ${ rem(105) };
   }
 `;
-
-Header.propTypes = {
-  logotype: PropTypes.string,
-  logotypeAlt: PropTypes.string
-}
 
 export default Header;
