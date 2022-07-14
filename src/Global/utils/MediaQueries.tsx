@@ -1,7 +1,7 @@
 import { gridBreakpoints } from "../styles/Breakpoints";
 
 /**
- * Helper for media queries.
+ * Helper for media queries. Returns a media query string for the given breakpoint.
  */
 const media = {
   /**
