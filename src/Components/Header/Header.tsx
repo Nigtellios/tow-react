@@ -6,11 +6,11 @@ import PropTypes from "prop-types";
 import colors from "../../Global/styles/Colors";
 import transitions from "../../Global/styles/Transitions";
 
-function Header( {logotype, logotypeAlt} ) {
+function Header( { logotype, logotypeAlt } ) {
   return (
     <HeaderWrapper>
       <Logotype>
-        <img src={logotype} alt={logotypeAlt}/>
+        <img src={ logotype } alt={ logotypeAlt }/>
       </Logotype>
     </HeaderWrapper>
   );

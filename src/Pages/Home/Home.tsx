@@ -11,7 +11,7 @@ const Home = () => {
             <GlobalStyles/>
             <Header
                 logotype="http://localhost:8888/uploads/TOW_Logotype_79f99a22d8.svg"
-                logotypeAlt={1}
+                logotypeAlt={"Tickets of Wonderland"}
             />
             <Banner text="React Banner" />
             <Footer text="2021, Jakub Kowalski"/>

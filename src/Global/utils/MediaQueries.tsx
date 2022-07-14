@@ -9,14 +9,14 @@ const media = {
    * @example media.min('md')
    * // returns `@media (min-width: 768px)`
    */
-  min: (name) => `@media (min-width: ${gridBreakpoints[name]}px)`,
+  min: (name): string => `@media (min-width: ${gridBreakpoints[name]}px)`,
 
   /**
    * @param {keyof gridBreakpoints} name
    * @example media.max('lg')
    * // returns `@media (max-width: 1023px) - lg breakpoint minus one`
    */
-  max: (name) =>
+  max: (name): string =>
     `@media (max-width: ${gridBreakpoints[name] - 1}px)`,
 
   /**
@@ -25,7 +25,7 @@ const media = {
    * @example media.between('md', 'lg')
    * // returns `@media (min-width: 768px) and (max-width: 1023px)`
    */
-  between: (minName, maxName) =>
+  between: (minName: string, maxName: string) =>
     `@media (min-width: ${gridBreakpoints[minName]}px) and (max-width: ${
       gridBreakpoints[maxName] - 1
     }px)`,

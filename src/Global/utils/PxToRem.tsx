@@ -3,7 +3,7 @@
  * @param px
  * @returns {string}
  */
-const rem = (px) => {
+const rem = (px): string => {
   return (px / 16) + 'rem';
 }
 
