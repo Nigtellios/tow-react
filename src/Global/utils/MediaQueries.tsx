@@ -25,7 +25,7 @@ const media = {
    * @example media.between('md', 'lg')
    * // returns `@media (min-width: 768px) and (max-width: 1023px)`
    */
-  between: (minName: string, maxName: string) =>
+  between: (minName: string, maxName: string): string =>
     `@media (min-width: ${gridBreakpoints[minName]}px) and (max-width: ${
       gridBreakpoints[maxName] - 1
     }px)`,
