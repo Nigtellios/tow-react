@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from "prop-types";
 
-function Footer({ text }) {
+function Footer( { text }: { text: string } ) {
   return(
     <FooterWrapper>
-      <h1>{text}</h1>
+      <h1>{ text }</h1>
     </FooterWrapper>
   );
 }
@@ -17,9 +16,5 @@ const FooterWrapper = styled.footer`
   align-items: center;
   align-content: center;
 `;
-
-Footer.propTypes = {
-  text: PropTypes.string
-}
 
 export default Footer;

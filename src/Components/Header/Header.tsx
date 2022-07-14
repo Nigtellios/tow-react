@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import rem from "../../Global/utils/PxToRem";
 import media from "../../Global/utils/MediaQueries";
-import PropTypes from "prop-types";
 import colors from "../../Global/styles/Colors";
 import transitions from "../../Global/styles/Transitions";
 
-function Header( { logotype, logotypeAlt } ) {
+function Header( { logotype, logotypeAlt }: { logotype: string, logotypeAlt: string } ) {
   return (
     <HeaderWrapper>
       <Logotype>
@@ -14,11 +13,6 @@ function Header( { logotype, logotypeAlt } ) {
       </Logotype>
     </HeaderWrapper>
   );
-}
-
-Header.propTypes = {
-    logotype: PropTypes.string,
-    logotypeAlt: PropTypes.string
 }
 
 const HeaderWrapper = styled.header`

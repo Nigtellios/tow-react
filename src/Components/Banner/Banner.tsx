@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import styled from 'styled-components';
 import rem from "../../Global/utils/PxToRem";
 
-function Banner({ text }) {
+function Banner({ text }: { text: string }) {
   return (
     <section>
       <BannerWrapper>
@@ -27,9 +26,5 @@ const BannerText = styled.h1`
   font-size: ${ rem(48) };
   line-height: ${ rem(48) };
 `;
-
-Banner.propTypes = {
-  text: PropTypes.string
-}
 
 export default Banner;
