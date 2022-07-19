@@ -9,7 +9,7 @@ function Header( { logotype, logotypeAlt }: { logotype: string, logotypeAlt: str
   return (
     <HeaderWrapper>
       <Logotype>
-        <img src={ logotype } alt={ logotypeAlt }/>
+        <img src={ logotype } alt={ logotypeAlt } loading={`lazy`}/>
       </Logotype>
     </HeaderWrapper>
   );
@@ -36,10 +36,10 @@ const HeaderWrapper = styled.header`
     height: ${ rem(3) };
     width: 0;
     background: ${ colors.dark };
+	  transition: ${ transitions.long };
   }
 
   &:hover:before {
-    transition: ${ transitions.long };
     width: 100%;
   }
 `;
@@ -48,6 +48,7 @@ const Logotype = styled.div`
   display: block;
   
   img {
+    width: 100%;
     max-width: ${ rem(105) };
   }
 `;
