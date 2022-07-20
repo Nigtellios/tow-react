@@ -1,9 +1,10 @@
 import { gql } from "@apollo/client"
 
 export const HeaderQuery = gql`
-    query {
+    query Header {
         header {
             data {
+                id
                 attributes {
                     logotype {
                         data {
